@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--bs css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">        
+        <!--bs icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!--自己寫的CSS要放最下面-->
+    <style>
+        /*將視窗的寬高設定滿版*/
+        html,body{
+            width: 100%;
+            height: 100%;
+            background-color: #3b2424;
+        }
+        /*各區背景圖設定*/
+        /*首頁*/
+        #home{
+            background-image: url("./images/p0.jpg");
+        }
+
+        #m1 {
+            background-image: url("./images/p1.jpg");
+        }
+
+        #m2 {
+            background-image: url("./images/p2.jpg");
+        }
+
+        /*各區背景相關設定*/
+        section{
+            height: 100%;
+            padding-top: 150px;
+            background-size: cover;
+            background-position: center center;
+            /*背景固定不動*/
+            background-attachment: fixed;
+        }      
+
+        .txt-bg{
+            background-color: rgba(255, 255, 255, 6);
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        .txt-bg h2{
+            text-align: center;
+        }
+
+        .txt-bg h2 i{
+            color: blueviolet;
+            font-size: 46px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<!--結構撰寫區-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Qoo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!--mr-auto:靠左對其(預設值)-->
+    <!--ml-auto:靠右對其-->
+    <!--mx-auto:置中對其-->
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#m1">選單1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#m2">選單2</a>
+      </li>
+  </div>
+    </nav>
+
+<!--各區選單內容-->
+<!--HOME-->
+<section id="home">
+    <div class="container">
+        <div class="row">
+           <div class="txt-bg">
+              <h2><i class="bi bi-house-heart-fill"></i>首頁</h2>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  In neque molestias numquam aliquam corporis sequi ullam adipisci! 
+                  Architecto at nesciunt reiciendis quasi nobis ex labore, aperiam dolores. 
+                  Iusto, error asperiores.
+              </p>
+           </div>
+        </div>
+    </div>
+</section>
+
+<!--選單1-->
+<section id="m1">
+    <div class="container">
+        <div class="row">
+           <div class="txt-bg">
+              <h2><i class="bi bi-house-heart-fill"></i>選單1</h2>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  In neque molestias numquam aliquam corporis sequi ullam adipisci! 
+                  Architecto at nesciunt reiciendis quasi nobis ex labore, aperiam dolores. 
+                  Iusto, error asperiores.
+              </p>
+           </div>
+        </div>
+    </div>
+</section>
+
+<!--選單2-->
+<section id="m2">
+    <div class="container">
+        <div class="row">
+           <div class="txt-bg">
+              <h2><i class="bi bi-house-heart-fill"></i>選單2</h2>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  In neque molestias numquam aliquam corporis sequi ullam adipisci! 
+                  Architecto at nesciunt reiciendis quasi nobis ex labore, aperiam dolores. 
+                  Iusto, error asperiores.
+              </p>
+           </div>
+        </div>
+    </div>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-7ymO4nGrkm372HoSbq1OY2DP4pEZnMiA+E0F3zPr+JQQtQ82gQ1HPY3QIVtztVua"
+        crossorigin="anonymous"></script>
+        
+</body>
+
+</html>
